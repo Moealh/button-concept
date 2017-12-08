@@ -2,66 +2,69 @@ p {
   font-size: 2em;
 }
 div {
-  margin:10% auto;
+  margin: 10% auto;
   width: 50%;
   text-align: center;
   font-family: sans-serif;
 }
 
-button{
-  cursor:pointer;
-  position:relative;
-  display:inline-block;
+button {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
   border: none;
   border-radius: 5px;
   font-size: 0.85em;
   letter-spacing: 2px;
-  background-color: #FF6600;
+  background-color: #ff6600;
   color: white;
-  height:50px;
+  height: 50px;
   min-width: 250px;
-  line-height:50px;
-  padding:0 10px;
-  background: linear-gradient(to right, #FF6600 , #0066FF);
+  line-height: 50px;
+  padding: 0 10px;
+  background: linear-gradient(to right, #ff6600, #0066ff);
   background-size: 1000% 100%;
   background-position: 0% 0;
-  transition: all .4s cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
-button:hover{
+button:hover {
   background-position: 100% 0;
-  transition-duration:.4s;
+  transition-duration: 0.4s;
   padding: 0 0 0 20px;
 }
 
-
 /* Arrow from a border and its animation */
 
-button:hover::before
-{ 
-  opacity:1; 
-  left:30px; 
-  transition:all .3s cubic-bezier(0.215, 0.610, 0.355, 1.000); 
+button:hover::before {
+  opacity: 1;
+  left: 30px;
+  transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
-button::before
-{
-  display:block;
-  content:"";
-  position:absolute;
-  width:0px;
-  height:0px;
+button::before {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 0px;
   border: 5px solid transparent;
   border-left: 6px solid #fff;
-  top:50%;
-  margin-top:-5px;
-  left:20px;
-  opacity:0;
-  transition:all .3s cubic-bezier(0.215, 0.610, 0.355, 1.000); 
+  top: 50%;
+  margin-top: -5px;
+  left: 20px;
+  opacity: 0;
+  transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 @keyframes BackgroundGradient {
-  0%  { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100 { background-position: 0% 50%; }
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100 {
+    background-position: 0% 50%;
+  }
 }
